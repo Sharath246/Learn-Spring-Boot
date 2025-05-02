@@ -1,4 +1,4 @@
-package com.temp.temp.User.Entity;
+package com.temp.temp.Workspace.Entity;
 
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
@@ -14,14 +14,13 @@ import lombok.Setter;
 @NoArgsConstructor
 @AllArgsConstructor
 @Builder
-public class User {
+public class Board {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-
-    private String email;
-    private String username;
-    private String password;
+    private String name;
+    private Long workspaceId;
+    private String createdby;
 
 }

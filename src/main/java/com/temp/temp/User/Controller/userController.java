@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 
 @RestController
-public class userController {
+public class UserController {
     @GetMapping("/login")
     public ResponseEntity<String> login(@RequestParam LoginDTO userDetails) {
         return ResponseEntity.ok("Success");

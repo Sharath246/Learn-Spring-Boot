@@ -1,4 +1,6 @@
-package com.temp.temp.User.Entity;
+package com.temp.temp.Task.Entity;
+
+import java.util.Date;
 
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
@@ -14,14 +16,14 @@ import lombok.Setter;
 @NoArgsConstructor
 @AllArgsConstructor
 @Builder
-public class User {
+public class Task {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @GeneratedValue(strategy = GenerationType.UUID)
     private Long id;
-
-    private String email;
-    private String username;
-    private String password;
-
+    private String title;
+    private String description;
+    private String status;
+    private String priority;
+    private Date duedate, createddate, updateddate;
 }

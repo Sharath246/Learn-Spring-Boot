@@ -1,4 +1,6 @@
-package com.temp.temp.User.Entity;
+package com.temp.temp.Task.Entity;
+
+import java.util.Date;
 
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
@@ -14,14 +16,13 @@ import lombok.Setter;
 @NoArgsConstructor
 @AllArgsConstructor
 @Builder
-public class User {
-
+public class Auditlog {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-
-    private String email;
-    private String username;
-    private String password;
-
+    private String action;
+    private String entity;
+    private Long entityid;
+    private Long user;
+    private Date timestamp;
 }

@@ -1,4 +1,4 @@
-package com.temp.temp.User.Entity;
+package com.temp.temp.Task.Entity;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -11,7 +11,7 @@ import lombok.Setter;
 @NoArgsConstructor
 @AllArgsConstructor
 @Builder
-public class Role {
-    private Long id;
-    private String role;
+public class Assignee {
+    private Long taskid;
+    private Long userId;
 }
